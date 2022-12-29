@@ -1,0 +1,74 @@
+{
+  "name": "react-use-polling",
+  "version": "1.0.0",
+  "description": "Polling hooks for React.",
+  "keywords": [
+    "react",
+    "reactjs",
+    "polling"
+  ],
+  "homepage": "https://github.com/hey3/react-use-polling#readme",
+  "bugs": {
+    "url": "https://github.com/hey3/react-use-polling/issues"
+  },
+  "license": "MIT",
+  "author": "hey3",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hey3/react-use-polling.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">= 16",
+    "pnpm": "7"
+  },
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "rimraf dist",
+    "build": "tsc && vite build",
+    "format": "prettier . --check --ignore-unknown",
+    "format:fix": "prettier . --write --ignore-unknown",
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "lint:fix": "eslint . --fix --ext .js,.ts,.tsx",
+    "test": "vitest run",
+    "typecheck": "tsc --project tsconfig.json --pretty --noEmit --emitDeclarationOnly false --incremental false",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "13.4.0",
+    "@types/react": "18.0.26",
+    "@typescript-eslint/eslint-plugin": "5.47.1",
+    "@typescript-eslint/parser": "5.47.1",
+    "@vitejs/plugin-react-swc": "3.0.1",
+    "eslint": "8.30.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "jsdom": "20.0.3",
+    "prettier": "2.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rimraf": "3.0.2",
+    "typescript": "4.9.4",
+    "vite": "4.0.3",
+    "vitest": "0.26.2"
+  }
+}
