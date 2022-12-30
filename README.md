@@ -1,6 +1,8 @@
 # react-use-polling
 
 ![ci](https://github.com/hey3/react-use-polling/actions/workflows/test.yml/badge.svg)
+![npm version](https://badge.fury.io/js/react-use-polling.svg)
+![license](https://badgen.net/npm/license/react-use-polling)
 
 `react-use-polling` is a react hooks library for polling asynchronous processes.
 
